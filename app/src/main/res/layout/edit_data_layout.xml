@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    tools:context=".MainActivity3">
+
+
+<!--
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editable_item1"
+        android:inputType="textPersonName"
+        />
+
+        -->
+
+    <view
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/editable_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toplayout"
+        class="com.example.ashish.noteapp.NoteEdit$LineEditText"
+        android:background="@android:color/transparent"
+        android:capitalize="sentences"
+        android:fadingEdge="vertical"
+        android:gravity="top"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:textSize="22sp" />
+
+
+
+
+
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSave"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="80dp"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_save"
+
+        app:fabSize="mini"/>
+
+
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelete"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:src="@drawable/ic_delete"
+        app:fabSize="mini"/>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:id="@+id/editable_item"
+            android:textAlignment="center"
+            android:layout_marginTop="78dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:weightSum="100"
+        android:layout_below="@+id/editable_item"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDelete"
+            android:layout_marginTop="10dp"
+            android:text="Delete"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSave"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/btnDelete"
+            android:text="Save"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+-->
